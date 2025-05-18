@@ -44,21 +44,8 @@ El EUSART genera flags e interrupciones para eventos de transmisión y recepció
 - **RCIF:** Indica que RCREG contiene un dato recibido.  
 Para usar interrupciones, se habilitan TXIE/RCIE y luego las interrupciones globales. La rutina de servicio puede leer RCREG o cargar TXREG de forma automática al ocurrir cada evento.
 
-### Comparación con SPI e I²C
-- **UART vs SPI:**  
-  - SPI es síncrono full-dúplex con reloj externo y alta velocidad.  
-  - UART es asíncrono, más lento, pero solo usa dos líneas y es más simple de implementar.
-- **UART vs I²C:**  
-  - I²C es síncrono bidireccional en dos hilos, permite múltiples dispositivos con direccionamiento y velocidades hasta varios MHz.  
-  - UART es punto a punto, sin direccionamiento interno, y depende de bits de inicio/parada en cada trama.
 
-### Aplicaciones prácticas del UART
-- **Depuración y monitoreo** de datos de sensores o eventos en PC mediante convertidores USB‑serie.  
-- **Módulos inalámbricos y GPS** (por ejemplo, HC‑05, ESP32 en modo AT, receptores GNSS).  
-- **Sensores o periféricos** que ofrecen salida UART (RFID, módulos de telemetría).  
-- **Protocolos industriales** como Modbus RTU sobre RS‑485.  
-- **Bootloaders y actualizaciones de firmware** en sistemas embebidos.  
-- **Educación y prototipado**, por su sencillez y soporte nativo en la mayoría de microcontroladores.
+
 
 
 ## Implmentación
