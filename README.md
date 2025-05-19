@@ -398,5 +398,8 @@ https://github.com/user-attachments/assets/3f80ffb6-ba1c-424a-b207-bcf217aa6a7c
 8. Habilitación del noveno bit (```TXSTA_bit6_R/W```): 1&rarr;Habilitado, 0&rarr; Deshabilitado.
 9. Habilitación de interrupción de transmisión (```PIE1_bit4_R/W```): 1&rarr;Habilitado, 0&rarr; Deshabilitado.
 10. Flag de interrupción de transmisión (```PIR1_bit4_R/W```): 1&rarr;Buffer de datos vacío, 0&rarr; Deshabilitado.
+    
+## Referencias
+Microchip Technology Inc. (s.f.). MPLAB® X Integrated Development Environment (IDE) [Software]. Recuperado de https://www.microchip.com/mplab/mplab-x-ide
 
-
+Maldonado Ramírez, D. N. (2025, 12 de mayo). Lab04: Comunicación UART en PIC18F45K22  [Archivo de GitHub]. https://github.com/DianaNatali/ECCI-Microprocesadores-2025-I-/blob/main/laboratorios/4_lab04/README.md
