@@ -177,7 +177,7 @@ void UART_WriteVoltage(uint16_t adcValue);
    - Incluye prototipos adicionales (UART_WriteUInt, UART_WriteVoltage) para futuras ampliaciones.
 
 
-## 2) main.2
+## 2) main1.c
 
 La docente solicitó mostrar en un `serial monitor` el valor del potenciometro por medio del UART.
 
@@ -231,7 +231,7 @@ void main(void) {
 ### Explicación
 En cada iteración del código, a la variable `valor` se le asigna el dato leído del potenciómetro mediante la función `ADC_Read()`. Finalmente, la función `printf()` se encarga de formatear y enviar la cadena correspondiente por UART y mostrar el resultado. Este ciclo se repite cada segundo.
 
-## 3) main.3
+## 3) main2.c
 
 La docente solicitó ahora trasnformar el valor del potenciometro a voltaje.
 
@@ -296,5 +296,39 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 
 
 ## Implmentación
+## Diagramas
 
+<p align="center"><strong>Figura 16.</strong> Diagrama de flujo de las declaraciones de la funciones UART.</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2c758568-cbf6-45e5-a471-79649b08a986" alt="Diagrama de flujo del sistema de control" width="250"/>
+</p>
+<p align="center"><em>Fuente: Elaboración propia.</em></p>
+<p align="center"><strong>Figura 17.</strong> Diagrama de flujo de las intrucciones de las funciones UART</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/90e31d10-d566-46f9-8292-b8a74958c77e" alt="Diagrama de flujo del sistema de control" width="250"/>
+</p>
+<p align="center"><em>Fuente: Elaboración propia.</em></p>                                             
+<p align="center"><strong>Figura 18.</strong> Diagrama de flujo del Main</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/24cb6d95-f42b-4c36-8014-0bff9482d183" alt="Diagrama de flujo del sistema de control" width="250"/>
+</p>
+<p align="center"><em>Fuente: Elaboración propia.</em></p>
+
+<p align="center"><strong>Figura 19.</strong> Diagrama de flujo del Main1.c</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/eddb2995-e369-4b36-a1ec-c37b0c6a1c41" alt="Diagrama de flujo del sistema de control" width="250"/>
+</p>
+<p align="center"><em>Fuente: Elaboración propia.</em></p>
+
+<p align="center"><strong>Figura 19.</strong> Diagrama de flujo del Main2.c</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dad46717-584d-4775-abe6-876792407f74" alt="Diagrama de flujo del sistema de control" width="250"/>
+</p>
+<p align="center"><em>Fuente: Elaboración propia.</em></p>
+
+<p align="center"><strong>Figura 20.</strong> Diagrama de las partes que ulizamos del PIC18F45K22</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6384aca5-7fcf-4299-8a2b-28b95535efec" width="600"/>
+</p>
+<p align="center"><em>Fuente: Elaboración propia.</em></p>
 
