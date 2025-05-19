@@ -296,6 +296,14 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 
 
 ## Implmentación
+### Conexiones
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d46f5660-4560-47e7-896f-5ac84253e1fa" alt="Mi imagen">
+</p>
+
+<p align="center">
+(Fuente: Maldonado Ramírez, D. N. (2025, 12 de mayo). Lab04: Comunicación UART en PIC18F45K22 [Archivo de GitHub]. https://github.com/DianaNatali/ECCI-Microprocesadores-2025-I-/blob/main/laboratorios/4_lab04/README.md)
+</p>
 ### Montaje en fisíco
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3775cabe-5b85-413b-9bc3-f0e442d0ec42" alt="Mi imagen">
