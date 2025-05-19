@@ -1,34 +1,21 @@
-#include "pwm.h"
-volatile unsigned char duty = 0;
-void setupPWM(void) {
-    TRISC2 = 0;                    
-    PR2 = 255;                     
-    CCP1CON = 0b00001100;          
-    CCPR1L = 0;                    
-    T2CON = 0b00000111;            
-}
+#include <xc.h>
+#include "uart.h"
+#include "adc.h"
+#include <stdio.h>
 
-// -------- Cambiar el duty cycle (0 a 255) --------
-void setDuty(unsigned char val) {
-    CCPR1L = val;
-}
+#pragma config FOSC = INTIO67  // Oscilador interno
+#pragma config WDTEN = OFF     // Watchdog Timer apagado
+#pragma config LVP = OFF       // Low Voltage Programming off
 
-// -------- Configuración del Timer0 para 100 ms --------
-void setupTimer0(void) {
-    T0CON = 0b10000111;            
-    TMR0 = 3036;                   
-    INTCONbits.TMR0IE = 1;         
-    INTCONbits.TMR0IF = 0;        
-    INTCONbits.GIE = 1;            
-}
+void main(void) {
+    OSCCON = 0b01110000;  // Oscilador interno a 16MHz
+    UART_Init();          // Inicializa UART (9600bps)
+    ADC_Init();           // Inicializa ADC
 
-// -------- Interrupción de Timer0 --------
-void __interrupt() ISR(void) {
-    if (INTCONbits.TMR0IF) {
-        TMR0 = 3036;               
-        duty += 20;                
-        if (duty > 255) duty = 0;  
-        setDuty(duty);             
-        INTCONbits.TMR0IF = 0;     
+    uint16_t valor;
+    while (1) {
+        valor = ADC_Read();        // 0–1023
+        printf("%u\r\n", valor);   // convierte a ASCII y envía por UART
+        __delay_ms(1000);
     }
 }
