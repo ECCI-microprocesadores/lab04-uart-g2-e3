@@ -298,9 +298,12 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 ## Implmentación
 ### Main 1
 
-<div align="center">
-  <img src="https://github.com/ECCI-microprocesadores/lab04-uart-g2-e3/issues/5#issue-3072316395" alt="Main 1">
- </div>
+<p align="center">
+  <video width="640" controls>
+    <source src="https://user-images.githubusercontent.com/TU-USUARIO/…/tu-video.mp4" type="video/mp4">
+    Tu navegador no soporta el tag de vídeo.
+  </video>
+</p>
 
 <p align="center">
 (Fuente: Elaboración propia)
