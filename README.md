@@ -296,6 +296,11 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 
 
 ## Implmentación
+### Montaje en fisíco
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3775cabe-5b85-413b-9bc3-f0e442d0ec42" alt="Mi imagen">
+</p>
+
 ### Main 1
 
 https://github.com/user-attachments/assets/2b988892-9299-40bb-8eef-ac2f4ac87dfc
