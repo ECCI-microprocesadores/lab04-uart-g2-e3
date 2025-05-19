@@ -320,7 +320,7 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 
 Demostración del envío de mensajes UART a un monitor serial: en la grabación se aprecia cómo el sistema transmite correctamente datos UART y los despliega en tiempo real en el monitor serial.
 
-https://github.com/user-attachments/assets/2b988892-9299-40bb-8eef-ac2f4ac87dfc
+https://github.com/user-attachments/assets/c9a33590-2ade-4bac-8e4c-bb406c1c325c
 
 <p align="center">
 (Fuente: Elaboración propia)
