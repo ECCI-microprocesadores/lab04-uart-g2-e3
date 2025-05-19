@@ -297,7 +297,7 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 
 ## Implmentación
 ### Conexiones
-
+<p align="center"><strong>Figura 1.</strong> Conexiones.</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d46f5660-4560-47e7-896f-5ac84253e1fa" alt="Mi imagen">
 </p>
@@ -307,7 +307,7 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 </p>
 
 ### Montaje en fisíco
-
+<p align="center"><strong>Figura 2.</strong>Monntje en Fisíco.</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3775cabe-5b85-413b-9bc3-f0e442d0ec42" alt="Mi imagen">
 </p>
@@ -318,6 +318,8 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 
 ### Main 1
 
+Demostración del envío de mensajes UART a un monitor serial: en la grabación se aprecia cómo el sistema transmite correctamente datos UART y los despliega en tiempo real en el monitor serial.
+
 https://github.com/user-attachments/assets/2b988892-9299-40bb-8eef-ac2f4ac87dfc
 
 <p align="center">
@@ -326,6 +328,8 @@ https://github.com/user-attachments/assets/2b988892-9299-40bb-8eef-ac2f4ac87dfc
 
 ### Main 2
 
+Integración del UART con el ADC: en este clip se visualiza la comunicación entre el módulo UART y el convertidor analógico‑digital, mostrando cómo varian los valores del potenciómetro a medida que variamos su posición.
+
 https://github.com/user-attachments/assets/f072b190-55c0-4739-b1ee-3e1209f6d68c
 
 <p align="center">
@@ -333,6 +337,8 @@ https://github.com/user-attachments/assets/f072b190-55c0-4739-b1ee-3e1209f6d68c
 </p>
 
 ### Main 3
+
+Conversión de lecturas a voltaje: el video ilustra con claridad la transformación de las señales del potenciómetro en valores de voltaje, reflejados dinámicamente en el monitor serial según los cambios que realicemos.
 
 https://github.com/user-attachments/assets/750806b5-7daf-4b1c-b319-ee01bda1c039
 
@@ -343,6 +349,8 @@ https://github.com/user-attachments/assets/750806b5-7daf-4b1c-b319-ee01bda1c039
 
 ### Implementación de grafica a tiempo real en Python
 
+Visualización gráfica mediante Python: en esta secuencia se ejecuta un script en Python que traza la evolución del voltaje a lo largo del tiempo, generando una gráfica que facilita el análisis de la señal.
+
 https://github.com/user-attachments/assets/3f80ffb6-ba1c-424a-b207-bcf217aa6a7c
 
 
@@ -352,44 +360,44 @@ https://github.com/user-attachments/assets/3f80ffb6-ba1c-424a-b207-bcf217aa6a7c
 
 ## Diagramas
 
-<p align="center"><strong>Figura 16.</strong> Diagrama de flujo de las declaraciones de laS funciones UART.</p>
+<p align="center"><strong>Figura 3.</strong> Diagrama de flujo de las declaraciones de laS funciones UART.</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2c758568-cbf6-45e5-a471-79649b08a986" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
 <p align="center"><em>Fuente: Elaboración propia.</em></p>
-<p align="center"><strong>Figura 17.</strong> Diagrama de flujo de las intrucciones de las funciones UART</p>
+<p align="center"><strong>Figura 4.</strong> Diagrama de flujo de las intrucciones de las funciones UART</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/90e31d10-d566-46f9-8292-b8a74958c77e" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
-<p align="center"><strong>Figura 16.</strong> Diagrama de flujo de las declaraciones de las funciones ADC.</p>
+<p align="center"><strong>Figura 5.</strong> Diagrama de flujo de las declaraciones de las funciones ADC.</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/14d08d82-93ec-4c7d-a90c-db291bbab9a2" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
 <p align="center"><em>Fuente: Elaboración propia.</em></p>
-<p align="center"><strong>Figura 17.</strong> Diagrama de flujo de las intrucciones de las funciones ADC</p>
+<p align="center"><strong>Figura 6.</strong> Diagrama de flujo de las intrucciones de las funciones ADC</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/cd6d4254-64d3-4f40-bed3-605a0a1f5cf1" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
 <p align="center"><em>Fuente: Elaboración propia.</em></p>                                             
-<p align="center"><strong>Figura 18.</strong> Diagrama de flujo del Main</p>
+<p align="center"><strong>Figura 7.</strong> Diagrama de flujo del Main</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/24cb6d95-f42b-4c36-8014-0bff9482d183" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
 <p align="center"><em>Fuente: Elaboración propia.</em></p>
 
-<p align="center"><strong>Figura 19.</strong> Diagrama de flujo del Main1.c</p>
+<p align="center"><strong>Figura 8.</strong> Diagrama de flujo del Main1.c</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/eddb2995-e369-4b36-a1ec-c37b0c6a1c41" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
 <p align="center"><em>Fuente: Elaboración propia.</em></p>
 
-<p align="center"><strong>Figura 19.</strong> Diagrama de flujo del Main2.c</p>
+<p align="center"><strong>Figura 9.</strong> Diagrama de flujo del Main2.c</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dad46717-584d-4775-abe6-876792407f74" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
 <p align="center"><em>Fuente: Elaboración propia.</em></p>
 
-<p align="center"><strong>Figura 20.</strong> Diagrama de las partes que ulizamos del PIC18F45K22</p>
+<p align="center"><strong>Figura 10.</strong> Diagrama de las partes que ulizamos del PIC18F45K22</p>
 <p align="center">
 <img src="https://github.com/user-attachments/assets/21214375-f7a3-47cc-a5c4-ba19019f17ba" width="850" />
 </P>
