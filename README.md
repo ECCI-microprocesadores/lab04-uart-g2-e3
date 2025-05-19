@@ -177,8 +177,72 @@ void UART_WriteVoltage(uint16_t adcValue);
    - Incluye prototipos adicionales (UART_WriteUInt, UART_WriteVoltage) para futuras ampliaciones.
 
 
+## 2) main.2
 
+La docente solicitó ahora trasnformar el valor del potenciometro a voltaje.
 
+---
+
+```c
+#include <xc.h>
+#include "uart.h"
+#include "adc.h"
+#include <stdio.h>
+
+#pragma config FOSC = INTIO67  
+#pragma config WDTEN = OFF     
+#pragma config LVP = OFF       
+
+```
+### Explicación 
+
+1. **Se cargan las cabeceras necesarias**  
+   - Incluye <xc.h> para acceso a registros del PIC , "uart.h" para las funciones UART,"adc.h" para las funciones ADC y <stdio.h> para printf() y putch().
+2. **Los pragmas configuran los fuses:
+  - FOSC = INTIO67: oscilador interno, libera RA6/RA7.
+  - WDTEN = OFF: desactiva el Watchdog Timer.
+  - LVP = OFF: deshabilita la programación en bajo voltaje.
+    
+```c
+void main(void) {
+    OSCCON = 0b01110000;  
+    UART_Init();          
+    ADC_Init();     
+
+```
+### Explicación 
+
+ - OSCCON = 0b01110000; fija el oscilador interno a 16 MHz.
+ - UART_Init(); inicializa la UART a 9600 bps, habilitando TX/RX e interrupciones.
+ - ADC_Init(); configura el ADC.
+ ```c
+    uint16_t valor, mV;
+    uint8_t volts, deci;  
+
+```
+### Explicación 
+
+1.**Se declaran variables para el proceso**
+ - valor: Para lectura del ADC (0–1023)..
+ - mV: voltaje calculado en milivoltios.
+ - volts: parte entera del voltaje (0–5 V).
+ - deci: primer dígito decimal (0–9).
+
+```c
+    while (1) {
+        valor = ADC_Read();                
+        mV    = (valor * 5000UL) / 1023;      
+
+        volts = mV / 1000;                 
+        deci  = (mV % 1000) / 100;         
+
+        printf("%u.%u V\r\n", volts, deci);
+        __delay_ms(1000);
+    }
+}
+```
+### Explicación
+En cada iteración del código, a la variable `valor` se le asigna el dato leído del potenciómetro mediante la función `ADC_Read()`. Luego, se aplica la fórmula `(valor * 5000UL) / 1023` para convertir ese valor a milivoltios con mayor precisión. A continuación, se divide el resultado entre 1000 para obtener la parte entera del voltaje en voltios (`V`), y se calcula la parte decimal tomando el residuo de milivoltios entre 1000 y dividiéndolo entre 100. Finalmente, la función `printf()` se encarga de formatear y enviar la cadena correspondiente por UART, utilizando internamente `putch()` para transmitir carácter por carácter.
 
 ## Implmentación
 
