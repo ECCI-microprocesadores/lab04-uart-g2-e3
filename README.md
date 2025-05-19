@@ -361,7 +361,7 @@ https://github.com/user-attachments/assets/3f80ffb6-ba1c-424a-b207-bcf217aa6a7c
 <p align="center">
   <img src="https://github.com/user-attachments/assets/90e31d10-d566-46f9-8292-b8a74958c77e" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
-<p align="center"><strong>Figura 16.</strong> Diagrama de flujo de las declaraciones de laS funciones ADC.</p>
+<p align="center"><strong>Figura 16.</strong> Diagrama de flujo de las declaraciones de las funciones ADC.</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/14d08d82-93ec-4c7d-a90c-db291bbab9a2" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
