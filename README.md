@@ -302,7 +302,7 @@ https://github.com/ECCI-microprocesadores/lab04-uart-g2-e3/issues/5#issue-307231
 
 ## Diagramas
 
-<p align="center"><strong>Figura 16.</strong> Diagrama de flujo de las declaraciones de la funciones UART.</p>
+<p align="center"><strong>Figura 16.</strong> Diagrama de flujo de las declaraciones de laS funciones UART.</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2c758568-cbf6-45e5-a471-79649b08a986" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
@@ -310,6 +310,15 @@ https://github.com/ECCI-microprocesadores/lab04-uart-g2-e3/issues/5#issue-307231
 <p align="center"><strong>Figura 17.</strong> Diagrama de flujo de las intrucciones de las funciones UART</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/90e31d10-d566-46f9-8292-b8a74958c77e" alt="Diagrama de flujo del sistema de control" width="250"/>
+</p>
+<p align="center"><strong>Figura 16.</strong> Diagrama de flujo de las declaraciones de laS funciones ADC.</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/14d08d82-93ec-4c7d-a90c-db291bbab9a2" alt="Diagrama de flujo del sistema de control" width="250"/>
+</p>
+<p align="center"><em>Fuente: Elaboración propia.</em></p>
+<p align="center"><strong>Figura 17.</strong> Diagrama de flujo de las intrucciones de las funciones ADC</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cd6d4254-64d3-4f40-bed3-605a0a1f5cf1" alt="Diagrama de flujo del sistema de control" width="250"/>
 </p>
 <p align="center"><em>Fuente: Elaboración propia.</em></p>                                             
 <p align="center"><strong>Figura 18.</strong> Diagrama de flujo del Main</p>
@@ -332,7 +341,19 @@ https://github.com/ECCI-microprocesadores/lab04-uart-g2-e3/issues/5#issue-307231
 
 <p align="center"><strong>Figura 20.</strong> Diagrama de las partes que ulizamos del PIC18F45K22</p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6384aca5-7fcf-4299-8a2b-28b95535efec" width="600"/>
-</p>
-<p align="center"><em>Fuente: Elaboración propia.</em></p>
+<img src="https://github.com/user-attachments/assets/21214375-f7a3-47cc-a5c4-ba19019f17ba" width="850" />
+</P>
+<p align="center"><em>Fuente: Maldonado Ramírez, D. N. (2025, 12 de mayo). Lab04: Comunicación UART en PIC18F45K22 [Archivo de GitHub].https://github.com/DianaNatali/ECCI-Microprocesadores-2025-I-/blob/main/laboratorios/4_lab04/README.md></p>
+  
+1. Activación del puerto serie (```RCSTA_bit7_R/W```): 1&rarr;Habilitado, 0&rarr; Deshabilitado.
+2. Habilitación de transmisión (```TXTA_bit5_R/W```): 1&rarr;Habilitado, 0&rarr; Deshabilitado.
+3. Determinar el divisor del reloj para establecer la velocidad de baudios.
+4. Dato a transmitir.
+5. Registro de desplazamiento interno. Es el registro interno al que el hardware del UART transfiere los datos del buffer ```TXREG``` para luego enviarlos bit a bit por la línea TX.
+6. Estado del registro ```TSR``` (```TXSTA_bit1_R```): 1&rarr;Vacío, 0&rarr; Lleno.
+7. Noveno bit a transmitir (```TXSTA_bit0_W```). Bit de paridad.
+8. Habilitación del noveno bit (```TXSTA_bit6_R/W```): 1&rarr;Habilitado, 0&rarr; Deshabilitado.
+9. Habilitación de interrupción de transmisión (```PIE1_bit4_R/W```): 1&rarr;Habilitado, 0&rarr; Deshabilitado.
+10. Flag de interrupción de transmisión (```PIR1_bit4_R/W```): 1&rarr;Buffer de datos vacío, 0&rarr; Deshabilitado.
+
 
