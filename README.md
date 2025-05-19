@@ -179,7 +179,7 @@ void UART_WriteVoltage(uint16_t adcValue);
 
 ## 2) main.2
 
-La docente solicitó mostrar el un `serial monitor` el valor del potenciometro por medio del UART.
+La docente solicitó mostrar en un `serial monitor` el valor del potenciometro por medio del UART.
 
 ---
 
