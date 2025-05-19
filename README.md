@@ -297,7 +297,13 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 
 ## Implmentación
 ### main 1
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8c9fa50f-c259-44f8-b4d8-032fc37fcea1" alt="Descripción de la imagen">
+ </div>
 
+<p align="center">
+(Fuente: Elaboración propia)
+</p>
 https://github.com/ECCI-microprocesadores/lab04-uart-g2-e3/issues/5#issue-3072316395
 
 ## Diagramas
