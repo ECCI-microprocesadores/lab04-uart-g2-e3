@@ -240,6 +240,60 @@ void main(void) {
 ### Explicación
 En cada iteración del código, a la variable `valor` se le asigna el dato leído del potenciómetro mediante la función `ADC_Read()`. Luego, se aplica la fórmula `(valor * 5000UL) / 1023` para convertir ese valor a milivoltios con mayor precisión. A continuación, se divide el resultado entre 1000 para obtener la parte entera del voltaje en voltios (`V`), y se calcula la parte decimal tomando el residuo de milivoltios entre 1000 y dividiéndolo entre 100. Finalmente, la función `printf()` se encarga de formatear y enviar la cadena correspondiente por UART, utilizando internamente `putch()` para transmitir carácter por carácter.
 
+## 3) main.3
+
+La docente solicitó ahora trasnformar el valor del potenciometro a voltaje.
+
+---
+
+```c
+#include <xc.h>
+#include "uart.h"
+#include "adc.h"
+#include <stdio.h>
+
+#pragma config FOSC = INTIO67  
+#pragma config WDTEN = OFF     
+#pragma config LVP = OFF       
+
+```
+### Explicación 
+
+1. **Se cargan las cabeceras necesarias**  
+  - Incluye "adc.h" para las funciones ADC y <stdio.h> para printf() y putch().
+    
+```c
+void main(void) {
+    OSCCON = 0b01110000;  
+    UART_Init();          
+    ADC_Init();     
+
+```
+### Explicación 
+
+ - OSCCON = 0b01110000; fija el oscilador interno a 16 MHz.
+ - UART_Init(); inicializa la UART a 9600 bps, habilitando TX/RX e interrupciones.
+ - ADC_Init(); configura el ADC.
+ ```c
+    uint16_t valor; 
+
+```
+### Explicación 
+
+1.**Se declaran variables para el proceso**
+ - valor: Para lectura del ADC (0–1023)..
+
+```c
+    while (1) {
+        valor = ADC_Read();        // 0–1023
+        printf("%u\r\n", valor);   // convierte a ASCII y envía por UART
+        __delay_ms(1000);
+    }
+}
+```
+### Explicación
+En cada iteración del código, a la variable `valor` se le asigna el dato leído del potenciómetro mediante la función `ADC_Read()`. Finalmente, la función `printf()` se encarga de formatear y enviar la cadena correspondiente por UART y mostrar el resultado. Este ciclo se repite cada segundo.
+
 ## Implmentación
 
 
