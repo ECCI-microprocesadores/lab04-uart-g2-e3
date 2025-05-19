@@ -298,12 +298,33 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 ## Implmentación
 ### Main 1
 
+https://github.com/user-attachments/assets/2b988892-9299-40bb-8eef-ac2f4ac87dfc
+
 <p align="center">
-  <video width="640" controls>
-    <source src="https://user-images.githubusercontent.com/TU-USUARIO/…/tu-video.mp4" type="video/mp4">
-    Tu navegador no soporta el tag de vídeo.
-  </video>
+(Fuente: Elaboración propia)
 </p>
+
+### Main 2
+
+https://github.com/user-attachments/assets/f072b190-55c0-4739-b1ee-3e1209f6d68c
+
+<p align="center">
+(Fuente: Elaboración propia)
+</p>
+
+### Main 3
+
+https://github.com/user-attachments/assets/750806b5-7daf-4b1c-b319-ee01bda1c039
+
+
+<p align="center">
+(Fuente: Elaboración propia)
+</p>
+
+### Implementación de grafica a tiempo real en Python
+
+https://github.com/user-attachments/assets/3f80ffb6-ba1c-424a-b207-bcf217aa6a7c
+
 
 <p align="center">
 (Fuente: Elaboración propia)
