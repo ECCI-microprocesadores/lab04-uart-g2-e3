@@ -197,11 +197,7 @@ La docente solicitó ahora trasnformar el valor del potenciometro a voltaje.
 ### Explicación 
 
 1. **Se cargan las cabeceras necesarias**  
-   - Incluye <xc.h> para acceso a registros del PIC , "uart.h" para las funciones UART,"adc.h" para las funciones ADC y <stdio.h> para printf() y putch().
-2. **Los pragmas configuran los fuses:
-  - FOSC = INTIO67: oscilador interno, libera RA6/RA7.
-  - WDTEN = OFF: desactiva el Watchdog Timer.
-  - LVP = OFF: deshabilita la programación en bajo voltaje.
+  - Incluye "adc.h" para las funciones ADC y <stdio.h> para printf() y putch().
     
 ```c
 void main(void) {
