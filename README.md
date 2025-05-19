@@ -296,6 +296,10 @@ En cada iteración del código, a la variable `valor` se le asigna el dato leíd
 
 
 ## Implmentación
+### main 1
+
+https://github.com/ECCI-microprocesadores/lab04-uart-g2-e3/issues/5#issue-3072316395
+
 ## Diagramas
 
 <p align="center"><strong>Figura 16.</strong> Diagrama de flujo de las declaraciones de la funciones UART.</p>
